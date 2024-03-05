@@ -49,6 +49,9 @@ p {
 }
 
 #haiku {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 footer {
