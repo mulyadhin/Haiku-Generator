@@ -1,13 +1,15 @@
-function getHaiku() {
-  let text = document.getElementById("prompt").value;
-  let haiku = document.querySelector("#haiku");
-  console.log(text);
+function generateHaiku(event) {
+  event.preventDefault();
 
-  // new Typewriter("#haiku", {
-  // strings: `${response}`,
-  // autoStart: true,
-  //});
+  let element = document.querySelector("#example");
+  element.remove();
+
+  new Typewriter("#haiku", {
+    strings: `Generating...`,
+    autoStart: true,
+    cursor: "",
+  });
 }
 
-let submit = document.querySelector("#prompt");
-submit.addEventListener("submit", getHaiku);
+let prompt = document.querySelector("#search-form");
+prompt.addEventListener("submit", generateHaiku);
