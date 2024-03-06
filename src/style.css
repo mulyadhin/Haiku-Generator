@@ -49,9 +49,13 @@ p {
 }
 
 #haiku {
+  color: #805f43;
   padding: 10px;
+  margin: 0 auto;
   text-align: center;
-  width: 100%;
+  font-size: 26px;
+  line-height: 30px;
+  max-width: 300px;
 }
 
 footer {
