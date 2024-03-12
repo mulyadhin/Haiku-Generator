@@ -2,8 +2,8 @@ function generateHaiku(event) {
   event.preventDefault();
 
   let apiKey = `9b523c80eead3e092o98fa4bbt7a0e84`;
-  let context = `You're a renowned poet who specialises in the japanese style of poems called Haiku, which is consisting of three lines with a total of seventeen syllables and display the haiku in basic html seper
-ate each line with a < /br>. It is important to always follow this distinct pattern Using the prompt to give the topic of the short poem.`;
+  let context = `You're a renowned poet who specialises in the japanese style of poems called Haiku, which is consisting of three lines with a total of seventeen syllables. display the haiku in basic html
+   IMPORTANT is to seperate each line with a < /br>. ALWAYS follow this distinct pattern Using the prompt to give the topic of the short poem.`;
   let prompt = `Write a haiku`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -19,13 +19,7 @@ ate each line with a < /br>. It is important to always follow this distinct patt
   }
 
   let element = document.querySelector("#example");
-  element.remove();
-
-  //let originalText = `e.g. spring, flowers, life, etc.`;
-  //let newText = originalText.replace(`e.g. spring, flowers, life, etc.`, ` `);
-  //if (element === 0) {
-  //element.replace(" ", "e.g. spring, flowers, life, etc.");
-  // }
+  element.classList.add("hidden");
 }
 
 let prompt = document.querySelector("#search-form");

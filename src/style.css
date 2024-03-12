@@ -48,6 +48,10 @@ p {
   color: rgba(0, 0, 0, 0.559);
 }
 
+.hidden {
+  display: none;
+}
+
 #haiku {
   color: #805f43;
   padding: 10px;
